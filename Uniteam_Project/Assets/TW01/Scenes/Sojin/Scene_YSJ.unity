@@ -145,7 +145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &292455518
 Transform:
   m_ObjectHideFlags: 0
@@ -155,12 +155,12 @@ Transform:
   m_GameObject: {fileID: 292455517}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1510483423}
-  m_Father: {fileID: 1630693157}
+  m_Father: {fileID: 1020028149}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &292455519
 BoxCollider:
@@ -1024,7 +1024,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 292455518}
   m_Father: {fileID: 1630693157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1020028150
@@ -1429,8 +1430,7 @@ GameObject:
   - component: {fileID: 1510483423}
   - component: {fileID: 1510483422}
   - component: {fileID: 1510483421}
-  - component: {fileID: 1510483424}
-  - component: {fileID: 1510483425}
+  - component: {fileID: 1510483426}
   m_Layer: 0
   m_Name: Sugar
   m_TagString: Untagged
@@ -1503,32 +1503,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 292455518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1510483424
-MonoBehaviour:
+--- !u!65 &1510483426
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510483419}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5ab229817d8dd3479e6dd5f2c5e1a29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIController: {fileID: 0}
---- !u!114 &1510483425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510483419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe48469eb742f9408e6a8d0eb83824d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickCounts: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1630693156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,7 +1555,6 @@ Transform:
   m_Children:
   - {fileID: 1020028149}
   - {fileID: 510767961}
-  - {fileID: 292455518}
   - {fileID: 534674519}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

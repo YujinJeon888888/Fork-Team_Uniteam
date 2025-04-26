@@ -8,9 +8,6 @@ using TMPro;
 /// </summary>
 public class YSJ_UIController : MonoBehaviour
 {
-    /// <summary>
-    /// The pick counts
-    /// </summary>
     public TMP_Text PickCounts;
 
     /// <summary>
@@ -32,7 +29,7 @@ public class YSJ_UIController : MonoBehaviour
         PickCounts.text=currentPickCount.ToString(); //int->string
 
         //점수 변경 후 PlayerPrefs에 저장
-        PlayerPrefs.SetInt("Score", currentPickCount);
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score")-1);
         PlayerPrefs.Save();
 
     }
