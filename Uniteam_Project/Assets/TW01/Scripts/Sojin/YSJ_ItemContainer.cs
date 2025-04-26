@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class YSJ_ItemContainer : MonoBehaviour
 {
+    /// <summary>
+    /// The clone count
+    /// </summary>
     public int cloneCount = 10;
+    /// <summary>
+    /// The target object
+    /// </summary>
     public GameObject TargetObject;
-    // Start is called before the first frame update
+    /// <summary>
+    /// Starts this instance.
+    /// </summary>
     void Start()
     {
         InstantiateSugar();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    /// <summary>
+    /// Instantiates the sugar.
+    /// </summary>
     void InstantiateSugar()
     {
         for (int i = 0; i < cloneCount; i++)

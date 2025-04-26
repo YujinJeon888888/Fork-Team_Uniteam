@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class YSJ_PutController : MonoBehaviour
 {
+
     public GameObject TargetObjectToThrow; //던질 오브젝트
+
     public Transform PlayerCamera; //카메라의 정보(위치, 스케일 등)가 transform에 담겨있음
     bool isInTheArea = false;
     public GameObject UI;
 
+    /// <summary>
+    /// Updates this instance.
+    /// </summary>
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && isInTheArea)
         {
-            int pickCounts = UI.GetComponent<YSJ_UIController>().GetPickCounts();
+            int pickCounts = UI.GetComponent<YSJ_UIController>().GetPickCounts(); 
             if (pickCounts > 0)
             {
                 Throw();
@@ -22,6 +27,9 @@ public class YSJ_PutController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Throws this instance.
+    /// </summary>
     void Throw()
     {
         Vector3 Pos = PlayerCamera.transform.position+PlayerCamera.transform.forward;
@@ -51,7 +59,10 @@ public class YSJ_PutController : MonoBehaviour
     }
 
 
-    //put영역 안에 있어야만 던질 수 있게 
+    /// <summary>
+    /// Called when [trigger enter]. put영역 안에 있어야만 던질 수 있게 
+    /// </summary>
+    /// <param name="other">The other.</param>
     void OnTriggerEnter(Collider other)
     {
         if (other.name == "FPSController")
@@ -59,6 +70,10 @@ public class YSJ_PutController : MonoBehaviour
             isInTheArea = true;
         }
     }
+    /// <summary>
+    /// Called when [trigger exit].
+    /// </summary>
+    /// <param name="other">The other.</param>
     void OnTriggerExit(Collider other)
     {
         if (other.name == "FPSController")
