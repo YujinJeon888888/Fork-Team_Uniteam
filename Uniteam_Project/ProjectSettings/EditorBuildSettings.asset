@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TW01/Scenes/Yujin/TW01_Home.unity
+    guid: d7d576657fc52144a89b94b50b8e5b75
+  - enabled: 1
+    path: Assets/TW01/Scenes/Yukyoung/D13_PickAndPut.unity
+    guid: 147cbdbb37100674aa279f1e89ce5904
+  - enabled: 1
+    path: Assets/TW01/Scenes/Soeun/Soeun_PickAndPut.unity
+    guid: 44fe669897a67934884b133a26c93342
+  - enabled: 1
+    path: Assets/TW01/Scenes/Yujin/TW01_YujinPickAndPut.unity
+    guid: bc7b288c1ff56054383e83e3f661fa02
   m_configObjects: {}
