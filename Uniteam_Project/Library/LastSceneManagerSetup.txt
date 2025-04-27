@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/TW01/Scenes/Yewon/YewonScene.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
