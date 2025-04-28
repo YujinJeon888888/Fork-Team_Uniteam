@@ -19,6 +19,8 @@ public class D06_UI_Controller : MonoBehaviour
         int lastPutCount = int.Parse(PutCounts.text);
         int currentPutCount = lastPutCount + 1;
         PutCounts.text = currentPutCount.ToString();
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score")+1);
+        Debug.Log("프리팹 점수 : " + PlayerPrefs.GetInt("Score"));
     }
 
     public void Decrease_PickCounts()
