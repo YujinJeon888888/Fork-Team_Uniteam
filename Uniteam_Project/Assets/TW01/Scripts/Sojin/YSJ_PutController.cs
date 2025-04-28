@@ -23,6 +23,7 @@ public class YSJ_PutController : MonoBehaviour
             {
                 Throw();
                 UI.GetComponent<YSJ_UIController>().Decrease_PickCounts();
+                
             }
         }
     }

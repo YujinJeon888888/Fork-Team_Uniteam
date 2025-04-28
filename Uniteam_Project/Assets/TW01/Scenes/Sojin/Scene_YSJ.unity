@@ -192,7 +192,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 292455517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc03116b050d7be40a9fd9b96eb9b2af, type: 3}
+  m_Script: {fileID: 11500000, guid: ee51536c79efc4eaab478ce7edd6872a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PickController: {fileID: 534674518}
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 575915808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 011c575dcf490cf419dd2d8ecadb95f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e9f287dd8971452fa702b5fdad0bd49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TargetObjectToThrow: {fileID: 292455517}
@@ -744,6 +744,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_MouseLook.lockCursor
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -991,7 +995,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 958149622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3a4eb7aecf9f77428a1f479d63e1306, type: 3}
+  m_Script: {fileID: 11500000, guid: 6496ca4522591481c95bab0d04488cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PickCounts: {fileID: 1265872175}
@@ -1037,7 +1041,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020028148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3d55739485540a4da27afbabefe321a, type: 3}
+  m_Script: {fileID: 11500000, guid: d919b180128834b26bd6ae89ace2cfbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cloneCount: 10
