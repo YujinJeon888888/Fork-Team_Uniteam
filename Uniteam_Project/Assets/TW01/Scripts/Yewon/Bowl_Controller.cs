@@ -14,6 +14,9 @@ public class Bowl_Controller : MonoBehaviour
         {
             Destroy(other.gameObject);
             Debug.Log($"Item entered the bowl and was destroyed.");
+            //score증가
+            PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 1);
         }
+        
     }
 }

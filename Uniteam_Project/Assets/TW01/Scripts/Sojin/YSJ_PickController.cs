@@ -16,11 +16,9 @@ public class YSJ_PickController : MonoBehaviour
         clickCounter++;
         print($"clickCount: {clickCounter}");
         Destroy(clone);
-        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 1);
-        PlayerPrefs.Save();
-
+   
         //UI에 업데이트된 클릭 수 표시
-        UI.GetComponent<YSJ_UIController>().Display_PickCounts(PlayerPrefs.GetInt("Score")); 
+        UI.GetComponent<YSJ_UIController>().Display_PickCounts(clickCounter); 
         
     }
 

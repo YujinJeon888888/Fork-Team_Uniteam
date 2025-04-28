@@ -29,9 +29,8 @@ public class YSJ_UIController : MonoBehaviour
         PickCounts.text=currentPickCount.ToString(); //int->string
 
         //점수 변경 후 PlayerPrefs에 저장
-        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score")-1);
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score")+1);
         PlayerPrefs.Save();
-
     }
 
     /// <summary>
