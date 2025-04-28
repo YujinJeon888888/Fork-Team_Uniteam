@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Uniteam_Project/Assets/TW01/Scripts/Yewon/Item_Controller.cs.meta
+guid: e1f325d7102e94946ba6951ece0f2228
+========
 guid: bec58649e807b534382f6d215ff93ab1
+>>>>>>>> main:Uniteam_Project/Assets/TW01/Scripts/Sojin/YSJ_ItemController.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
