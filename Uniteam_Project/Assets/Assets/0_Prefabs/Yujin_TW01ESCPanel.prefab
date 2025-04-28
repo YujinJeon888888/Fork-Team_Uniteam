@@ -944,7 +944,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: YewonScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2255416299033131847
@@ -1720,7 +1720,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Scene_YSJ
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7456770643880246236
